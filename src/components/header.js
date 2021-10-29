@@ -39,6 +39,13 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
+  const header = Header('Arguments', 1942, '98 Degrees');
+  
+  const select = document.querySelector(selector);
+  
+  select.appendChild(header);
+  
 }
 
 export { Header, headerAppender }
+
